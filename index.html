@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          rel="stylesheet" />
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <style>
+
+          
+            .container{
+                 display: flex;
+                justify-content: center;
+                 height: 180px;
+                width: 100%;
+                background-color: #FFE4CF;
+             }
+
+             .navigation{
+                display: flex;
+                background-color: #FFE4CF;
+                width: 100%;
+            }
+
+            li{
+                display: inline-block;
+                margin: auto;
+                font-size: large;
+                padding-left:30px;
+                padding-right:30px;
+                margin-left:30px;
+                margin-right:30px;
+                color :rgb(102, 4, 4);
+                font-family : "OCR A Std", monospace;
+                border: solid 1px rgb(7, 6, 6);
+                border-radius: 10px 10px 10px 10px;
+            }
+
+            .title{
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            .couleur{
+                color: rgb(124, 5, 5);
+                font-family: "Bodoni MT", Didot, "Didot LT STD"
+            }
+
+            h1{
+                font-size: xx-large;
+            }
+            
+            .image{
+                height: 170px;
+                border-radius: 50%;
+
+            }
+            a{
+                color :rgb(124, 5, 5);
+                outline: none;
+
+            }
+            
+            .presentation_titre{
+                text-align: center;
+                margin-top: 100px;
+                text-decoration: #FFE4CF underline;
+            }
+
+            .presentation_paragraphe{
+                margin-left: 50px;
+                font-family: Times, "Times New Roman", Georgia, serif;
+                margin-top: 50px;
+                border-width:4px;
+                border-style:solid;
+                border-color: #FFE4CF;
+                font-size: large;
+                padding: 5%;
+            }
+
+            .option{
+                display: flex;
+            }
+
+            .option_titre{
+                text-align: center;
+                margin-top: 50px;
+                text-decoration: #FFE4CF underline;
+            }
+
+            .option_image{
+                height: 50px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+
+            .SLAM{
+                font-family: Times, "Times New Roman", Georgia, serif;
+                border-width:4px;
+                border-style:solid;
+                border-color: #FFE4CF;
+                width: 48%;
+                padding: 1%;
+                margin-top: 50px;
+            }
+
+            .SISR{
+                font-family: Times, "Times New Roman", Georgia, serif;
+                border-width:4px;
+                border-style:solid;
+                border-color: #FFE4CF;
+                width: 48%;
+                padding: 1%;
+                margin-top: 50px;
+            }
+
+            .tache{
+                height: 200px;
+            }
+            
+            .cours{
+                margin-top: 80px;
+                
+            }
+
+            .cours_titre{
+                text-align: center;
+                text-decoration: underline #FFE4CF;
+            }
+
+            .presentation_cours{
+                position: relative;
+                text-align: center;
+                margin-top: 50px;
+                border-width:4px;
+                border-style:solid;
+                border-color: #FFE4CF;
+                width: 50%;
+                right: -300px;
+            }
+
+            .mention{
+                margin-top: 80px;
+                border-top: solid 8px rgb(124, 5, 5);
+            }
+
+            .mention_informations{
+                text-align: center;
+            }
+
+            @media (max-width: 800px) {
+            li {
+                flex-direction: row-reverse;
+                margin : auto;
+                }
+}
+@media (max-width: 800px) {
+  .presentation_cours {
+    position: relative;
+    left : 100px;
+  }
+}  
+
+        </style>
+    </head>
+        <body>
+            <div class="container">
+                <img class="photo" src="Kaspara.png">
+            </div>
+            <nav>
+                <div class="navigation">
+                    <ul>
+                        <li><a href ="index.html">Accueil</li></a>
+                        <li><a href="bts.html">Projets</li></a>
+                        <li><a href="competences.html">Compétences</li></a>
+                        <li><a href="veille.html">Veille</li></a>
+                        <li><a href="contact.html">Contact</li></a>
+                        <li><a href="propos.html">à propos</li></a>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="title">
+                <h1>BIENVENUE SUR MON <span class="couleur">PORTFOLIO</span></h1>
+                <img class="tache" src="tache1.png">
+                <img class="image" src="IMG_P.PNG">
+                <img class="tache" src="tache2.png">
+                <h4>Vous y retrouverez toutes les informations concernant mes <span class="couleur">épreuves</span> et ma <span class="couleur">formation</h4></span>
+            </div>
+            <div class="presentation">
+                <h1 class="presentation_titre">Présentation <span class="couleur">GLOBALE</span></h1>
+                <p class="presentation_paragraphe"><span class="couleur">L</span>e BTS SIO (Services Informatiques aux organisations) est une formation de type <span class="couleur">BAC + 2<br></span> 
+                    <BR>
+                        <span class="couleur">I</span>l remplace le BTS-SIO IG(Informatique et gestion), la formation reçoit souvent des reformes pour suivre l'évolution de <span class="couleur">l'informatique<br></span> 
+                    <BR>
+                        <span class="couleur">D</span>eux spécialisations sont disponibles l'option SLAM ainsi que l'option SISR à choisir à la fin de la <span class="couleur"> première année <br></span>
+                   <BR>
+                    <span class="couleur">I</span>l est par la suite possible de poursuivre ses études en licence pro selon <span class="couleur">l'option choisie <BR></span> 
+                    </p>
+            </div>
+
+            
+                <h1 class="option_titre">Les Options du <span class="couleur">BTS SIO</h1></div></span>
+                <img class="option_image" src="vague.png">
+
+            <div class="option">
+                <div class="SLAM">
+                    <h3>Option 1 : SLAM (<span class="couleur">Solution Logiciel et Application Métier</span>)</h3>
+                    <p><span class="couleur">L</span>a spécialisation SLAM est orientée développement. Elle permet d'apprendre<BR><BR> <span class="couleur">l</span>a conception et la maintenance des services applicatifs. Elle permet différents débouchés t'elle que :  <BR><BR>
+                        <span class="couleur">D</span>éveloppeur d'applications informatiques, Analyste programmeur, Analyste d'applications... </p>
+                </div>
+                <div class="SISR">
+                    <h3>Option 2 : SISR (<span class="couleur">Solutions d'Infrastructure Systèmes et Réseaux</span>)</h3>
+                    <p><span class="couleur">L</span>a spécialisation SISR est orientée réseaux. Elle permet d'apprendre<BR><BR> <span class="couleur">l</span>a gestion des équipements et réseaux informatiques.  Elle permet différents débouchés t'elle que : <BR><BR>
+                        <span class="couleur">T</span>echnicien de production, Technicien d’infrastructure, Pilote d’exploitation... </p>
+                </div>
+            </div>
+
+            <div class="cours">
+                <h1 class="cours_titre">Les Matières du <span class="couleur">BTS SIO</h1></span>
+                <div class="presentation_cours">
+                    <h3>Matières du <span class="couleur">BTS</span></h3>
+                    <p>-<span class="couleur">C</span>ulture Générale & Expression</p>
+                    <p>-<span class="couleur">A</span>nglais</p>
+                    <p>-<span class="couleur">M</span>athématiques et Algorithmie</p>
+                    <p>-<span class="couleur">A</span>nalyse économique, managériale et juridique</p>
+                    <p>-<span class="couleur">E</span>nseignements de spécialité SLAM || SISR</p>
+                    <p>-<span class="couleur">C</span>yber-Sécurité</p>
+                    <p>-<span class="couleur">M</span>odule Open Class Room</p>   
+                </div>
+            </div>
+
+            <div class="mention">
+                    <div class="mention_informations">
+                        <p>Kasparas Dermeikis | Tous droits Réservés</p>
+                        <p><a href="mention.html">Mentions légales du site</p></a>
+                    </div>
+            </div>
+        </body>
+</html>

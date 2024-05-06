@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+
+            .header{
+                display: flex;
+               justify-content: center;
+                height: 180px;
+               width: 100%;
+               background-color: #FFE4CF;
+            }
+
+            .navigation{
+               display: flex;
+               background-color: #FFE4CF;
+               width: 100%;
+           }
+
+           li{
+               display: inline-block;
+               margin: auto;
+               font-size: large;
+               padding-left:30px;
+               padding-right:30px;
+               margin-left:30px;
+               margin-right:30px;
+               color :rgb(102, 4, 4);
+               font-family : "OCR A Std", monospace;
+               border: solid 1px rgb(7, 6, 6);
+               border-radius: 10px 10px 10px 10px;
+           }
+
+           .mention{
+                margin-top: 80px;
+                border-top: solid 8px rgb(124, 5, 5);
+            }
+
+            .mention_informations{
+                text-align: center;
+            }
+
+            a{
+                color :rgb(124, 5, 5);
+                outline: none;
+             }
+            
+                        
+            .container{
+              margin:20px auto;
+              max-width: 700px;
+            }
+
+            .container .heading{
+              text-align: center;
+              font-size: 30px;
+              padding:20px;
+              margin-bottom: 20px;
+              text-decoration: #FFE4CF underline;
+            }
+
+            .container .accordion-container{
+              padding:0 20px;
+            }
+
+            .container .accordion-container .accordion{
+              margin-bottom: 20px;
+              cursor: pointer;
+            }
+
+            .container .accordion-container .accordion.active .accordion-heading{
+              background: #FFE4CF;
+            }
+
+            .container .accordion-container .accordion.active .accordion-heading h3{
+              color : black;
+            }
+
+            .container .accordion-container .accordion.active .accordion-heading i{
+              color:black;
+              transform: rotate(180deg);
+              transition: transform .2s .1s;
+            }
+
+            .container .accordion-container .accordion.active .accordion-content{
+              display: block;
+            }
+
+            .container .accordion-container .accordion .accordion-heading{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap:10px;
+              background: #fff;
+              border:2px solid rgb(124, 5, 5);
+              padding:15px 20px;
+            }
+
+            .container .accordion-container .accordion .accordion-heading h3{
+              font-size: 18px;;
+            }
+
+            .container .accordion-container .accordion .accordion-heading i{
+              font-size: 25px;;
+            }
+
+            .container .accordion-container .accordion .accordion-content{
+              padding:15px 20px;
+              border:2px solid rgb(124, 5, 5);
+              font-size: 15px;
+              background: #fff;
+              border-top: 0;
+              display: none;
+              animation: animate .2s linear backwards;
+              line-height: 2;
+              transform-origin: top;
+            }
+
+            @keyframes animate {
+              0%{
+                transform: scaleY(0);
+              }
+            }
+                        
+          </style>
+           
+    </head>
+        <body>
+            <div class="header">
+                <img class="photo" src="Kaspara.png">
+            </div>
+            <nav>
+                <div class="navigation">
+                    <ul>
+                        <li><a href ="index.html">Accueil</li></a>
+                        <li><a href="bts.html">Projets</li></a>
+                        <li><a href="competences.html">Compétences</li></a>
+                        <li><a href="veille.html">Veille</li></a>
+                        <li><a href="contact.html">Contact</li></a>
+                        <li><a href="propos.html">à propos</li></a>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+
+                <h1 class="heading">A propos</h1>
+            
+                <div class="accordion-container">
+            
+                    <div class="accordion active">
+                        <div class="accordion-heading">
+                            <h3>Mon statut</h3>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <p class="accordion-content">
+                           Je suis un étudiant en deuxième année de BTS-SIO (Services aux Informatiques aux Organisation) en option SLAM (Solution Logiciel et Application Métier)
+                        </p>
+                    </div>
+            
+                    <div class="accordion">
+                        <div class="accordion-heading">
+                            <h3>Mon lieu d'étude</h3>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <p class="accordion-content">
+                           Je suis actuellement à l'école IRIS située à Strasbourg qui regroupe plusieurs formations comme celle de journalisme, communication, business, informatique et sport.
+                        </p>
+                    </div>
+            
+                    <div class="accordion">
+                        <div class="accordion-heading">
+                            <h3>Mon projet professionnel </h3>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <p class="accordion-content">
+                           Intégrer une licence professionnel pour pouvoir continuer la poursuite de mes études et ainsi favoriser mon expérience professionnelle par la même occasion. 
+                        </p>
+                    </div>
+            
+                    <div class="accordion">
+                        <div class="accordion-heading">
+                            <h3>Mon option SLAM</h3>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <p class="accordion-content">
+                            Après avoir choisi l'option SLAM à la fin de la première année je me suis retrouvé à apprendre plusieurs nouveaux langages et fonctionnement comme le PHP, Modélisation de bases de données, Java Script etc..
+                        </p>
+                    </div>
+            
+                </div>
+            
+            </div>
+            
+            
+            <script>
+            
+            let accordions = document.querySelectorAll('.accordion-container .accordion');
+            
+            accordions.forEach(acco =>{
+                acco.onclick = () =>{
+                    accordions.forEach(subAcco => { subAcco.classList.remove('active') });
+                    acco.classList.add('active');
+                }
+            })
+            
+            </script>
+
+            <div class="mention">
+                <div class="mention_informations">
+                    <p>Kasparas Dermeikis | Tous droits Réservés</p>
+                    <p><a href="mention.html">Mentions légales du site</p></a>
+                </div>
+        </div>
+    </body>
+</html>
